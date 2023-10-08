@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Caculator</title>
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <h1 class="text">QUÂN ĐÀO</h1>
+        </div>
+        <div class="body">
+            <div class="row">
+                <button class="col" value="7" onclick="setValue(this)">7</button>
+                <button class="col" value="8" onclick="setValue(this)">8</button>
+                <button class="col" value="9" onclick="setValue(this)">9</button>
+                <button class="col active" onclick="setValue(this)" value="*">x</button>
+            </div>
+            <div class="row">
+                <button class="col" value="4" onclick="setValue(this)">4</button>
+                <button class="col" value="5" onclick="setValue(this)">5</button>
+                <button class="col" value="6" onclick="setValue(this)">6</button>
+                <button class="col active" onclick="setValue(this)" value="-"> - </button>
+            </div>
+            <div class="row">
+                <button class="col" value="1" onclick="setValue(this)">1</button>
+                <button class="col" value="2" onclick="setValue(this)">2</button>
+                <button class="col" value="3" onclick="setValue(this)">3</button>
+                <button class="col active" onclick="setValue(this)" value="+">+</button>
+            </div>
+            <div class="row">
+                <button class="col" value="0" onclick="setValue(this)">0</button>
+                <button class="col active" onclick="setValue(this)" value="/"> / </button>
+                <button class="col active" onclick="deleteText()">DEL</button>
+                <button class="col active" onclick="caculate()"> = </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
